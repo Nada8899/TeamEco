@@ -17,6 +17,7 @@ html{
 body{
     font-family: 'Exo', sans-serif;
     color: white;
+    background-image: url(/Photo/body-bg-75163e67f04c506397c3885b6dcce035.webp);
 }
 ul{
     list-style: none;
@@ -36,7 +37,7 @@ header {
     width: 100%;
     height: 100vh;
     line-height: 150px;
-    background-color: blue;
+    /* background-color: blue; */
     border-bottom: 1px solid black;
     font-weight: 600;
 
