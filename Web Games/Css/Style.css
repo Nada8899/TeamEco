@@ -38,6 +38,8 @@ header {
     height: 100vh;
     line-height: 150px;
     /* background-color: blue; */
+    background-image: url(/Photo/hero-bg1-82fc7416624f7e54a222475671a5e21d.webp);
+    background-size: cover;
     border-bottom: 1px solid black;
     font-weight: 600;
 
@@ -48,14 +50,14 @@ ul #last{
 nav{
     padding-left: var(--main-padding);
     padding-right: var(--main-padding);
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
-#header_btn{
+.header_btn{
 
     background-image: url(/Photo/header_btn.webp);
     background-position: center;
@@ -68,3 +70,38 @@ nav{
     line-height: 60px;
     text-decoration: none;
 }
+header a 
+{
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+}
+
+/* start-header-content */
+
+#header-content
+{
+    padding-left: var(--main-padding);
+    padding-top: 150px;
+    background-image: url(/Photo/hero-position-img.webp);
+    background-repeat: no-repeat;
+    background-position: 1000px 5px;
+    background-size: contain;
+    /* background-position:right-bottom ; */
+}
+#header-content h1
+{
+     font-family: 'Metal Mania', cursive;
+    font-size: 120px;
+    width: 767px;
+    margin: 0px;
+}
+#header-content h3
+{
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    line-height: 90px;
+}
+/* end_header-content */
