@@ -40,7 +40,7 @@ header {
     /* background-color: blue; */
     background-image: url(/Photo/hero-bg1-82fc7416624f7e54a222475671a5e21d.webp);
     background-size: cover;
-    border-bottom: 1px solid black;
+   
     font-weight: 600;
 
 } 
@@ -105,3 +105,47 @@ header a
     line-height: 90px;
 }
 /* end_header-content */
+/* Start Three img */
+.Head2 {
+    padding-top: 7%;
+    font-size: 3em;
+    text-align: center;
+
+}
+#ThreeImg {
+    height: 100vh;
+    text-align: center;
+    padding-top: 3%;
+
+}
+
+#ThreeImg #ImgOne {
+    background-image: url(/Photo/gaming-world-bg1.webp);
+}
+
+#ThreeImg #ImgTwo{
+    background-image: url(/Photo/gaming-world-bg2.webp);
+}
+
+#ThreeImg #ImgThree{
+    background-image: url(/Photo/gaming-world-bg3.webp);
+}
+
+#ThreeImg .One {
+    margin-right: 4%;
+    display: inline-block;
+    width: 22%;
+    background-repeat: no-repeat;
+    padding-top: 4%;
+    height: inherit;
+}
+
+
+#ThreeImg .content{
+    padding: 8%;
+}
+#ThreeImg .content h4{
+    padding-bottom: 10%;
+
+}
+/* end Three img */
