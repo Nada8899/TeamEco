@@ -1,2 +1,0 @@
-# TeamEco
-new repo
