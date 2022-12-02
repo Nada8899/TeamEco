@@ -149,3 +149,17 @@ header a
 
 }
 /* end Three img */
+/* start Games */
+
+.Head3{
+    padding-top: 7%;
+   
+    font-size: 3em;
+    text-align: center;
+}
+.Head3 p{
+    padding-top: 1.5%;
+    font-size: 1.385rem;;
+    text-align: center;
+
+}
