@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- Fontsawesome CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- Normalize Css -->
+		<link rel="stylesheet" href="./Css/Normalize.css" />
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			nav {
+				width: 95%;
+				height: 7vh;
+				margin-left: auto;
+				padding: 10px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background-color: rgb(157, 196, 51);
+                border-bottom: 1px solid grey;
+			}
+			nav i,
+			nav a {
+				text-decoration: none;
+				color: white;
+			}
+			nav .leftNav {
+				width: 30%;
+				padding-left: 30px;
+				display: flex;
+				justify-content: flex-start;
+				gap: 20px;
+			}
+			nav .rightNav {
+				width: 30%;
+				padding-right: 30px;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				gap: 20px;
+			}
+			nav .rightNav #profilePic {
+				display: inline-block;
+				width: 35px;
+				height: 35px;
+				border-radius: 50%;
+				background-color: white;
+				cursor: pointer;
+			}
+			nav .rightNav #login {
+				background-color: transparent;
+				border: none;
+				color: white;
+				cursor: pointer;
+			}
+			nav .middleNav {
+				position: relative;
+				height: 100%;
+				transform: translate(-20px, 0);
+			}
+			nav .middleNav input {
+				width: 125%;
+				height: 112%;
+				display: inline-block;
+				border-radius: 11px;
+				filter: opacity(0.2);
+				outline: none;
+				border: none;
+			}
+			nav .middleNav i {
+				position: absolute;
+			}
+			nav .middleNav #search {
+				right: -38px;
+				top: 7px;
+				color: gray;
+			}
+            nav .middleNav #mic {
+                position: absolute;
+                right: -70px;
+                top: 7px;
+                color: rgb(66, 65, 65);
+            } 
+            aside {
+                background-color: rgb(212, 212, 28);
+                border-right: 1px solid grey;
+                height: 100vh;
+                width: 5%;
+                position: fixed;
+                top: 0;
+                text-align: center;
+            }
+            aside span {
+                display: inline-block;
+            }
+            aside #logo {
+                padding-top: 2.1vh;
+                font-size: 20px;
+            }
+            aside #brandName {
+                width: 80%;
+                text-align: center;
+                font-size: 25px;
+                transform: rotate(-90deg) translate(-200px,0);
+                position: relative;
+
+            }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<div class="leftNav">
+					<a href="">Popular</a>
+					<a href="">Discounts</a>
+					<a href="">Test</a>
+				</div>
+				<div class="middleNav">
+					<input type="search" />
+					<i id="search" class="fa-solid fa-magnifying-glass"></i>
+					<i id="mic" class="fa-solid fa-microphone-lines"></i>
+				</div>
+				<div class="rightNav">
+					<a href=""><i class="fa-solid fa-basket-shopping"></i></a>
+					<a href=""><i class="fa-regular fa-heart"></i></a>
+					<button id="login">Login</button>
+					<span id="profilePic"></span>
+				</div>
+			</nav>
+			<aside>
+                <span id="logo"><i class="fa-solid fa-gamepad"></i></span>
+                <br>
+                <span id="brandName">Name</span>
+            </aside>
+		</div>
+	</body>
+</html>
