@@ -270,7 +270,7 @@ header a {
 /* End Game */
 
 /* start Footer */
-footer {
+/* footer {
 	height: 80vh;
 	padding: 3%;
 }
@@ -297,4 +297,120 @@ div {
 	margin-top: 50px;
 	margin-right: 25px;
 	border: 2px red solid;
+} */
+
+
+footer  {
+    padding: 100px 200px;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+footer .footerConatiner {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+}
+
+footer .footerConatiner h3 {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 70px;
+}
+
+footer .footerConatiner ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .footerConatiner ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+footer .footerConatiner ul li:hover {
+    color: #8D54F0;
+    cursor: pointer;
+}
+
+footer .footerConatiner:nth-child(1) {
+    padding:0 40px 0 0;
+    gap: 30px;
+}
+
+footer .footerConatiner:nth-child(1) .logo {
+    width: 220px;
+}
+footer .footerConatiner:nth-child(1) .socials {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .footerConatiner:nth-child(1) .socials img {
+    width: 70px;
+}
+
+footer .footerConatiner:nth-child(1) span {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 25px;
+    position: relative;
+    bottom: 75px;
+}
+footer .footerConatiner:nth-child(1) span i {
+    font-size: 25px;
+}
+
+
+/**/
+footer .footerConatiner:nth-child(2) {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer .footerConatiner:nth-child(2) span:nth-child(2), 
+footer .footerConatiner:nth-child(2) span:nth-child(4) {
+    color: #8D54F0;
+    margin-bottom: 20px;
+}
+
+footer .footerConatiner:nth-child(2) span:nth-child(4)  {
+    margin-top: 20px;
+}
+
+
+/*  */
+
+footer .footerConatiner:nth-child(3) .miniImgs img {
+    width: 25%;
+    border: 1px solid gray;
+    border-radius: 12%;
+    padding: 4%;
+    margin-left: 5px;
+}
+
+footer .footerConatiner:nth-child(3) .miniImgs img:nth-child(3) {
+    /* visibility: hidden; */
+    width: 26%;
+    /* margin-left: 10px; */
+
+}
+footer .footerConatiner:nth-child(3) .miniImgs img:nth-child(2) {
+    height: 90px;
+    width: 26.5%;
+}
+footer .footerConatiner:nth-child(3) .miniImgs img:nth-child(6) {
+    width: 27%;
+}
+
+/*  */
+
+footer .footerConatiner:nth-child(4) {
+    padding-left: 40px;
+    /* align-items: center; */
 }
