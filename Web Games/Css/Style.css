@@ -1,7 +1,7 @@
-:root{
-    --main-padding:265px;
-    
-} 
+:root {
+    --main-padding: 265px;
+
+}
 
 * {
     -webkit-box-sizing: border-box;
@@ -11,43 +11,48 @@
     margin: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: 'Exo', sans-serif;
     color: white;
     background-image: url(/Photo/body-bg-75163e67f04c506397c3885b6dcce035.webp);
 }
-ul{
+
+ul {
     list-style: none;
     display: inline;
-    
+
 }
-li{
+
+li {
     display: inline;
-    padding-left:80px ;
+    padding-left: 80px;
     position: relative;
 
 }
 
 
-header { 
-  
+header {
+
     width: 100%;
     height: 100vh;
     line-height: 150px;
     /* background-color: blue; */
     background-image: url(/Photo/hero-bg1-82fc7416624f7e54a222475671a5e21d.webp);
     background-size: cover;
-   
+
     font-weight: 600;
 
-} 
-ul #last{
-    padding-right:40px ;  
 }
-nav{
+
+ul #last {
+    padding-right: 40px;
+}
+
+nav {
     padding-left: var(--main-padding);
     padding-right: var(--main-padding);
     /* border-bottom: 1px solid black; */
@@ -57,7 +62,7 @@ nav{
     width: 100%;
 }
 
-.header_btn{
+.header_btn {
 
     background-image: url(/Photo/header_btn.webp);
     background-position: center;
@@ -70,8 +75,8 @@ nav{
     line-height: 60px;
     text-decoration: none;
 }
-header a 
-{
+
+header a {
     font-weight: 700;
     font-size: 22px;
     color: white;
@@ -79,8 +84,7 @@ header a
 
 /* start-header-content */
 
-#header-content
-{
+#header-content {
     padding-left: var(--main-padding);
     padding-top: 150px;
     background-image: url(/Photo/hero-position-img.webp);
@@ -89,21 +93,22 @@ header a
     background-size: contain;
     /* background-position:right-bottom ; */
 }
-#header-content h1
-{
-     font-family: 'Metal Mania', cursive;
+
+#header-content h1 {
+    font-family: 'Metal Mania', cursive;
     font-size: 120px;
     width: 767px;
     margin: 0px;
 }
-#header-content h3
-{
+
+#header-content h3 {
     font-weight: 700;
     font-size: 25px;
     margin: 0;
     padding: 0;
     line-height: 90px;
 }
+
 /* end_header-content */
 /* Start Three img */
 .Head2 {
@@ -112,6 +117,7 @@ header a
     text-align: center;
 
 }
+
 #ThreeImg {
     height: 70vh;
     text-align: center;
@@ -123,11 +129,11 @@ header a
     background-image: url(/Photo/gaming-world-bg1.webp);
 }
 
-#ThreeImg #ImgTwo{
+#ThreeImg #ImgTwo {
     background-image: url(/Photo/gaming-world-bg2.webp);
 }
 
-#ThreeImg #ImgThree{
+#ThreeImg #ImgThree {
     background-image: url(/Photo/gaming-world-bg3.webp);
 }
 
@@ -141,34 +147,37 @@ header a
 }
 
 
-#ThreeImg .content{
+#ThreeImg .content {
     padding: 8%;
 }
-#ThreeImg .content h4{
+
+#ThreeImg .content h4 {
     padding-bottom: 10%;
 
 }
+
 /* end Three img */
 
 /* Start-Matches */
 
-#matches h2{
+#matches h2 {
     text-align: center;
     font-weight: 700;
-    padding-top:100px ;
+    padding-top: 100px;
     font-size: 55px;
     margin-bottom: 20px;
-   
+
 }
 
-#matches>p{
+#matches>p {
     font-weight: 400;
     font-size: 18px;
     width: 567px;
     text-align: center;
     margin: 0 auto 50px;
 }
-#matches-div{
+
+#matches-div {
     /* margin-left: var(--main-padding);
     margin-right: var(--main-padding); */
     width: 80%;
@@ -181,8 +190,8 @@ header a
     margin-bottom: 30px;
 
 }
-#matches-text
-{
+
+#matches-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,28 +199,28 @@ header a
     width: 50%;
 
 }
-#matches-text p 
-{
+
+#matches-text p {
     /* padding-top: 20px; */
     /* padding-left: 20px; */
     font-weight: 400;
 
 }
-#matches-text h3
-{
+
+#matches-text h3 {
     /* padding-top: 50px; */
     /* padding-left: 20px; */
     font-weight: 700;
-    font-size: 35px;    
+    font-size: 35px;
 }
-#matches-text span
-{
-  /* padding-top: 20px; */
-  /* padding-left: 20px; */
-  font-weight: 400;   
+
+#matches-text span {
+    /* padding-top: 20px; */
+    /* padding-left: 20px; */
+    font-weight: 400;
 }
-#matches-imges
-{
+
+#matches-imges {
     display: flex;
     width: 50%;
     align-items: center;
@@ -219,6 +228,7 @@ header a
     justify-content: space-evenly;
 
 }
+
 /* End-Matches */
 
 /* start Games */
@@ -243,7 +253,7 @@ header a
 }
 
 .gameProfile div {
-    
+
     border: 1px solid rgb(33, 22, 111);
     width: 470px;
     height: 335px;
@@ -252,48 +262,57 @@ header a
     margin: 2%;
     border-radius: 33px;
 }
-.gameProfile div img{
+
+.gameProfile div img {
     width: 470px;
     height: 330px;
 }
-.gameProfile div :hover{
- 
+
+.gameProfile div :hover {
+
     width: 470px;
     height: 335px;
     border-radius: 33px;
     border-color: aliceblue;
     opacity: 0.6;
 }
+
 /* End Game */
 
 /* start Footer */
-footer{
-    height:80vh;
+footer {
+    height: 80vh;
     padding: 3%;
+  
 }
-footer section{
-   width: 23%;
-   height: 50%;
-   display: inline-block;
-}
+#part1{
+width: 30%;
+display: inline;
 
-#part1 img,p,div{
-
-    margin: 25px;
-}
-#part1 p{
-font-size: 20px;
+float: left;
 
 }
-
-#part1 div{
-
-    margin-top: 40px;
+ul{
+    float: right;
+    clear: both;
+    font-size: 2em;
+    width: 70%;
 }
-#part1  a{
-
-    padding: 15px;
-    margin-top: 50px;
-    margin-right: 25px;
-    border: 2px red solid;
-    }
+#ThreeFooter{
+width: 100%;
+}
+.f1{
+    width: 20%;
+    display: inline-block;
+} .f1 img{
+    width: 20%;
+    border: 1px solid gray;
+    border-radius: 12%;
+    padding: 2%;
+}
+.f1 h4{
+    color: #4B3991;
+}
+footer #Bottom{
+ padding-bottom: 3%;
+}
