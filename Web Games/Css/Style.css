@@ -265,3 +265,35 @@ header a
     opacity: 0.6;
 }
 /* End Game */
+
+/* start Footer */
+footer{
+    height:80vh;
+    padding: 3%;
+}
+footer section{
+   width: 23%;
+   height: 50%;
+   display: inline-block;
+}
+
+#part1 img,p,div{
+
+    margin: 25px;
+}
+#part1 p{
+font-size: 20px;
+
+}
+
+#part1 div{
+
+    margin-top: 40px;
+}
+#part1  a{
+
+    padding: 15px;
+    margin-top: 50px;
+    margin-right: 25px;
+    border: 2px red solid;
+    }
