@@ -263,6 +263,10 @@ header a {
     background-repeat: no-repeat;
     background-size: cover; */
 }
+.gameProfile div .play a{
+    text-decoration: none;
+    color: white;
+}
 /* End Game */
 
 /* start Footer */
