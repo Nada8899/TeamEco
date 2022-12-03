@@ -1,13 +1,4 @@
-// var games =document.getElementsByClassName("gamesPhoto");
 
-// for (let i = 0; i < games.length; i++) {
-//     games[i].addEventListener("mouseenter" , function (e) {
-//         console.log(event.target)
-//     })
-
-
-
-// }
 
 function ButtonShow(e) {
     let btn = e.firstChild;
