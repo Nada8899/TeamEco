@@ -10,7 +10,6 @@ let duckSound = document.getElementById("duck");
 let doggy = document.getElementById("doggy");
 let reload = document.getElementById("reload");
 
-
 var secs;
 var counter = 0;
 var flag;
@@ -18,10 +17,10 @@ var ammo;
 var reloader = false;
 var rounds = 0;
 
-
 startBtn.onclick = startGame;
 
 playAgainBtn.addEventListener("click", function () {
+	window.location.reload();
 	gameOverBanner.style.display = "none";
 	startBtn.style.display = "inline-block";
 	scoreBanner.style.display = "inline-block";
@@ -30,12 +29,11 @@ playAgainBtn.addEventListener("click", function () {
 
 document.body.addEventListener("click", bulletHole);
 
-
 // Bullet hole Function
 function bulletHole(event) {
-	reloading()
+	reloading();
 	if (ammo > 0) {
-		fireSound.play()
+		fireSound.play();
 		let hole = document.createElement("div");
 		hole.className = "bullet-hole";
 		container.append(hole);
@@ -52,20 +50,18 @@ function bulletHole(event) {
 
 // Reload state Function
 function reloading() {
-	if ((ammo == 0)) 
-	{
-		reloader = true
+	if (ammo == 0) {
+		reloader = true;
 		reload.play();
 		setTimeout(function () {
 			ammo = 3;
 			if (rounds < 3) {
-				rounds++
-			}
-			else {
-				timer()
+				rounds++;
+			} else {
+				timer();
 			}
 			reloader = false;
-		}, 3000)
+		}, 3000);
 	}
 }
 
@@ -108,12 +104,12 @@ function moveBirdRight(bird, y) {
 	birdFly(bird);
 
 	bird.addEventListener("click", function (event) {
-		if (!(reloader)) {			
+		if (!reloader) {
 			++counter;
 			clearInterval(move);
 			let birdX = event.clientX;
 			killBird(bird, y, birdX);
-			duckSound.play()
+			duckSound.play();
 		}
 	});
 }
@@ -121,13 +117,18 @@ function moveBirdRight(bird, y) {
 // Bird flying Function
 function birdFly(bird) {
 	let fly = setInterval(function () {
-		console.log(bird.src)
-		if (bird.src == "file:///A:/iTi/Client%20Side/JavaScript/Project/Bird%20Hunt/imgs/duck1-removebg-preview.png") {
-			bird.src = "file:///A:/iTi/Client%20Side/JavaScript/Project/Bird%20Hunt/imgs/duck2-removebg-preview.png";
+		console.log(bird.src);
+		if (
+			bird.src ==
+			"file:///A:/iTi/Client%20Side/JavaScript/Project/Bird%20Hunt/imgs/duck1-removebg-preview.png"
+		) {
+			bird.src =
+				"file:///A:/iTi/Client%20Side/JavaScript/Project/Bird%20Hunt/imgs/duck2-removebg-preview.png";
 			bird.style.width = "80px";
 			bird.style.transform = `rotate(${7}deg) scaleX(${1})`;
 		} else {
-			bird.src = "file:///A:/iTi/Client%20Side/JavaScript/Project/Bird%20Hunt/imgs/duck1-removebg-preview.png";
+			bird.src =
+				"file:///A:/iTi/Client%20Side/JavaScript/Project/Bird%20Hunt/imgs/duck1-removebg-preview.png";
 			bird.style.width = "60px";
 			bird.style.transform = `rotate(${45}deg) scaleX(${1})`;
 		}
@@ -156,7 +157,8 @@ function killBird(bird, y, birdX) {
 
 // Dead bird Function
 function deadBird(bird) {
-	bird.src = "file:///A:/iTi/Client%20Side/JavaScript/Project/Bird%20Hunt/imgs/duck2-removebg-preview.png";
+	bird.src =
+		"file:///A:/iTi/Client%20Side/JavaScript/Project/Bird%20Hunt/imgs/duck2-removebg-preview.png";
 	bird.style.transform = `rotate(${100}deg) scaleX(${1})`;
 }
 
@@ -168,7 +170,7 @@ score();
 
 //Dog reveal Function
 function dogFetch(drop, birdX) {
-	doggy.play()
+	doggy.play();
 	let dog = document.createElement("img");
 	dog.src = "./imgs/docbg.png";
 	dog.id = "dog";
