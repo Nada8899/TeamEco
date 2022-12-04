@@ -216,6 +216,7 @@ header a {
 }
 
 .gameProfile div {
+	padding: 10px;
 	position: relative;
 	border: 1px solid rgb(33, 22, 111);
 	width: 470px;
